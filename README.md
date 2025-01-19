@@ -11,65 +11,61 @@ TA fun and interactive memory matching game built with React. The goal is to mat
 - New Game: Shuffle the cards and start a new game anytime.
 - Interactive UI: Responsive and dynamic design for a great user experience.
 
-### `npm start`
+### Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React: For creating reusable components and managing state.
+- CSS: Custom styling for the game layout and animations.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Project Structure
 
-### `npm test`
+```
+.
+├── public                # Static assets (e.g., images)
+├── src
+│   ├── components
+│   │   └── SingleCard.js # Card component
+│   ├── App.js            # Main application file
+│   ├── App.css           # Styles for the application
+│   └── index.js          # Entry point for the React app
+├── package.json          # Project metadata and dependencies
+└── README.md             # Project documentation
+```.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Component Overview
 
-### `npm run build`
+- App.js: The main component that handles the game logic, card shuffling, and state management.
+- SingleCard.js: A reusable card component that handles flipping and displaying card images.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# How to Play
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Start a Game: Click the New Game button to shuffle the cards and reset the game.
+2. Flip Cards: Click on two cards to flip them over.
+3. Match Cards: If the two flipped cards match, they remain visible. If not, they flip back after a short delay.
+4. Track Turns: The number of turns is displayed at the bottom of the screen. Try to match all pairs in as few turns as possible.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Project setup
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+git clone https://github.com/your-username/memory-game.git
+cd memory-game
+```
+2. Install dependencies:
+   
+```
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Run the app:
+```
+npm run serve
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The app will now be running on http://localhost:3000.
 
-## Learn More
+# Customization
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Card Images: Update the cardImages array in App.js to use different images for the cards. Add images to the /public/img directory and update the src paths.
+- Styling: Modify the CSS in App.css or SingleCard.css to change the appearance of the cards and layout.
