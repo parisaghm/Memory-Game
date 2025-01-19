@@ -29,7 +29,7 @@ TA fun and interactive memory matching game built with React. The goal is to mat
 │   └── index.js          # Entry point for the React app
 ├── package.json          # Project metadata and dependencies
 └── README.md             # Project documentation
-```.
+```
 
 # Component Overview
 
