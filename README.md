@@ -1,10 +1,15 @@
-# Getting Started with Create React App
+# Memory Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TA fun and interactive memory matching game built with React. The goal is to match pairs of cards by flipping them over, testing your memory skills. Keep track of the number of turns and try to improve with each game!
 
-## Available Scripts
+![image](https://github.com/user-attachments/assets/b3364808-1fad-4418-874b-98ca1e2780a3)
 
-In the project directory, you can run:
+
+## Features
+- ard Matching: Flip over two cards and match their images.
+- Turn Counter: Keeps track of the number of turns taken.
+- New Game: Shuffle the cards and start a new game anytime.
+- Interactive UI: Responsive and dynamic design for a great user experience.
 
 ### `npm start`
 
